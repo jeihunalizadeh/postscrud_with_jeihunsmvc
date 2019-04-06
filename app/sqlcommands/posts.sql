@@ -1,0 +1,9 @@
+-- TABLE STRUCTURE FOR POSTS TABLE
+CREATE TABLE IF NOT EXISTS `posts` (
+`id` int NOT NULL AUTO_INCREMENT,
+`user_id` int NOT NULL,
+`title` varchar(255) NOT NULL,
+`body` text NOT NULL,
+`created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+PRIMARY KEY (`id`)
+)
