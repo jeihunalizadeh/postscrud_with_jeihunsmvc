@@ -14,9 +14,18 @@ class Pages extends Controller {
 	}
 	public function about() {
 		$data = [
-			'title' => 'About Page'
+			'title' => 'About Page',
+			'description' => 'This is a simple PHP playground app built with JeihunsMVC',
+			'version' => '1.0.0',
+			'extra' => 'It is currently on development stage'
 		];
-		$this->view('pages/about');
+		$this->view('pages/about', $data);
+	}
+	public function products(){
+		$data = [
+			'title' => 'Products page'
+		];
+		$this->view('products/index', $data);
 	}
 }
 

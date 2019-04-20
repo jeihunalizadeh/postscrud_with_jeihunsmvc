@@ -13,6 +13,9 @@
       <li class="nav-item">
         <a class="nav-link" href="<?php echo URLROOT; ?>pages/about">About</a>
       </li>
+      <li class="nav-item">
+        <a href="<?php echo URLROOT; ?>products/index" class="nav-link">Products</a>
+      </li>
     </ul>
     <ul class="navbar-nav navbar-right">
       <?php if(isset($_SESSION['user_id'])): ?>
