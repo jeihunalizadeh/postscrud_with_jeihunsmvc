@@ -5,10 +5,12 @@
 <table class="table table-hover table-dark mt-5">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Id </th>
+      <th scope="col">Product</th>
+      <th scope="col">Price</th>
+      <th scope="col">Description</th>
+      <th scope="col">Category</th>
+      <th scope="col">Actions</th>
     </tr>
   </thead>
   <tbody>
@@ -16,8 +18,15 @@
     <tr>
       <th scope="row"><?php echo $product->id; ?></th>
       <td><?php echo $product->name; ?></td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td><?php echo $product->price; ?>$</td>
+      <td><?php echo $product->description; ?></td>
+      <td><?php echo $product->category_id; ?></td>
+      <td>   
+   <a href="<?php echo URLROOT; ?>products/show/<?php echo $product->id; ?>" class="btn btn-primary">Read</a>
+   <a href="" class="btn btn-info">Edit</a>
+   <a href="#" class="btn btn-danger">Delete</a>
+      </td>
+
     </tr>
 
 <?php  endforeach; ?>

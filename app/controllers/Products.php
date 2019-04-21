@@ -14,6 +14,19 @@ class Products extends Controller {
 
         $this->view('products/index', $data);
     }
+
+    public function show($id) {
+        $product = $this->productModel->getProductById($id);
+        $data = [
+            'product' => $product
+        ];
+        $this->view('products/show' , $data);
+    }
+    
+    public function add() {
+        
+    }
+
 }
 
 
