@@ -13,6 +13,17 @@ class Products extends Controller {
         ];
 
         $this->view('products/index', $data);
+    }  
+
+    public function add() {
+        if($_SERVER['REQUEST_METHOD'] == 'POST'){
+            //sanitize product info
+            $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+            $data = [
+                
+
+            ];
+        }
     }
 
     public function show($id) {

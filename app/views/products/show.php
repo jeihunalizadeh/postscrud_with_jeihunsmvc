@@ -1,5 +1,6 @@
 <?php require APPROOT . '\views\inc\header.php'; ?>
-<a href="<?php echo URLROOT;?>products" class="btn btn-primary float-right mt-2 mb-2">Show all products</a>
+<h1 class="float-left mt-5">Read a Product</h1>
+<a href="<?php echo URLROOT;?>products" class="btn btn-primary float-right mt-5">Show all products</a>
 <table class="table table-bordered table-hover  table-dark mt-5">
 <tr>
   <td>Product Name</td>

@@ -1,7 +1,7 @@
 <?php require APPROOT . '\views\inc\header.php'; ?>
 
 
-
+<h1 class="float-left mt-5">Read Products</h1>
 <table class="table table-hover table-dark mt-5">
   <thead>
     <tr>

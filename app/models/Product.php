@@ -8,7 +8,7 @@ class Product {
     }
 
     public function getProducts(){
-        $this->db->query("SELECT * FROM products");
+        $this->db->query("SELECT * FROM products LIMIT 6");
         $results = $this->db->resultSet();
         return $results;
     }
