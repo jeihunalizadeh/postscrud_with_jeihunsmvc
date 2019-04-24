@@ -1,6 +1,6 @@
 <?php require APPROOT . '\views\inc\header.php'; ?>
 
-
+<a href="<?php echo URLROOT; ?>products/add" class="btn btn-success float-right mt-5">Create a Product</a>
 <h1 class="float-left mt-5">Read Products</h1>
 <table class="table table-hover table-dark mt-5">
   <thead>
@@ -17,10 +17,10 @@
      <?php foreach($data['products'] as $product)  :   ?>
     <tr>
       <th scope="row"><?php echo $product->id; ?></th>
-      <td><?php echo $product->name; ?></td>
+      <td><?php echo $product->productName; ?></td>
       <td><?php echo $product->price; ?>$</td>
       <td><?php echo $product->description; ?></td>
-      <td><?php echo $product->category_id; ?></td>
+      <td><?php echo $product->categoryName; ?></td>
       <td>   
    <a href="<?php echo URLROOT; ?>products/show/<?php echo $product->id; ?>" class="btn btn-primary">Read</a>
    <a href="" class="btn btn-info">Edit</a>
